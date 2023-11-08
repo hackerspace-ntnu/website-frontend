@@ -4,6 +4,8 @@ import { Route, Routes } from 'react-router-dom'
 import Header from './Header'
 import Footer from './Footer'
 import Home from '../pages/Home'
+import AboutPage from '../pages/AboutPage'
+
 
 //mport Logo from '../assets/logo.png'
 
@@ -22,7 +24,10 @@ const Content: React.FC<ContentProps> = () => {
       <div className='flex flex-col grow'>
         <Routes>
           <Route path='/'>
-            <Route index element={ <Home /> } />
+            <Route index element={<Home />} />
+          </Route>
+          <Route path='/AboutPage'>
+            <Route index element={<AboutPage />} />
           </Route>
         </Routes>
       </div>

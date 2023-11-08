@@ -40,9 +40,9 @@ const Footer: React.FC<FooterProps> = () => {
           </div>
           <div className='space-y-2'>
             <p className='font-bold'>Har du funnet en bug?</p>
-            <p>Send gjerne en mail til DevOps,
-            bruk #dev-public kanalen på Slack,
-            eller gi oss forslag til forbedringer på GitHub.</p>
+            <p>Send gjerne en <button style={{ textDecoration: 'underline' }} onClick={() => window.location.href = 'mailto:hackerspace-dev@idi.ntnu.no'}>mail</button> til DevOps,
+              bruk #dev-public kanalen på Slack,
+              eller gi oss forslag til forbedringer på <button style={{ textDecoration: 'underline' }} onClick={() => window.location.href = 'https://github.com/hackerspace-ntnu'}>GitHub</button>.</p>
           </div>
         </div>
         <div className={classNames(footerSectionClasses)}>
@@ -56,11 +56,14 @@ const Footer: React.FC<FooterProps> = () => {
             <p>Alle hverdager, 10:15 - 18:00</p>
           </div>
           <div className='space-y-2'>
+            <p className='font-bold'>Vaktliste</p>
+          </div>
+          <div className='space-y-2'>
             <p className='font-bold'>Kontakt oss</p>
             <a href='mailto:hackerspace-styret@idi.ntnu.no'>hackerspace-styret@idi.ntnu.no</a>
             <div className='flex flex-row justify-start space-x-8 h-10'>
-              <FaInstagram className='h-full w-10' />
-              <FaFacebook className='h-full  w-10' />
+              <FaInstagram onClick={() => window.location.href = 'https://www.instagram.com/hackerspacentnu/'} className='h-full w-10' />
+              <FaFacebook onClick={() => window.location.href = 'https://www.facebook.com/hackerspacentnu/?locale=nb_NO'} className='h-full  w-10' />
               <FaSlack className='h-full  w-10' />
             </div>
           </div>
