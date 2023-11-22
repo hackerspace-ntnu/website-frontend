@@ -26,7 +26,6 @@ const AboutPage: React.FC = () => {
           <div style={{ backgroundColor: '#313131' }} className=" p-4 w-full h-24 rounded-lg  mb-4"></div>
           <div style={{ backgroundColor: '#313131' }} className=" p-4 w-full h-24 rounded-lg  mb-4"></div>
           <div style={{ backgroundColor: '#313131' }} className=" p-4 w-full h-24 rounded-lg  mb-4"></div>
-
         </div>
       </div>
     </Page>

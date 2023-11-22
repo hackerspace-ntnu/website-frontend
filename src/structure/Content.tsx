@@ -5,6 +5,8 @@ import Header from './Header'
 import Footer from './Footer'
 import Home from '../pages/Home'
 import AboutPage from '../pages/AboutPage'
+import EventPage from '../pages/EventPage'
+
 
 
 //mport Logo from '../assets/logo.png'
@@ -28,6 +30,9 @@ const Content: React.FC<ContentProps> = () => {
           </Route>
           <Route path='/AboutPage'>
             <Route index element={<AboutPage />} />
+          </Route>
+          <Route path='/EventPage'>
+            <Route index element={<EventPage/>}/>
           </Route>
         </Routes>
       </div>

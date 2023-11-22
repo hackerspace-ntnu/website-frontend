@@ -29,6 +29,10 @@ const Header: React.FC<HeaderProps> = () => {
   const navigateToAboutPage = () => {
     navigate('/AboutPage');
   }
+  const navigateToEventPage = () => {
+    navigate('EventPage');
+
+  }
   const navigateToHomePage = () => {
     navigate('/');
   }
@@ -41,7 +45,7 @@ const Header: React.FC<HeaderProps> = () => {
       </div>
       <div className='flex flex-row items-center space-x-4'>
         <button onClick={navigateToAboutPage}>Om oss</button>
-        <p>Arrangementer</p>
+        <button onClick={navigateToEventPage}>Arrangementer</button>
         <button onClick={toggleTheme} className='p-4 h-min rounded-full text-white'>
           {
             dark ? <FaSun /> : <FaMoon />
